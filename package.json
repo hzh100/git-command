@@ -23,5 +23,12 @@
   "gitHooks": {
     "pre-commit": "echo message --- pre-commit",
     "commit-msg": "node ./verify-commit-msg.js"
+  },
+  "devDependencies": {
+    "chalk": "^3.0.0",
+    "yorkie": "^2.0.0"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security"
   }
 }
