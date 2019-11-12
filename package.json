@@ -1,0 +1,27 @@
+{
+  "name": "git-commend",
+  "version": "1.0.0",
+  "description": "git commend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hzh100/git-commend.git"
+  },
+  "keywords": [
+    "git",
+    "commend"
+  ],
+  "author": "hzh100",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hzh100/git-commend/issues"
+  },
+  "homepage": "https://github.com/hzh100/git-commend#readme",
+  "gitHooks": {
+    "pre-commit": "echo message --- pre-commit",
+    "commit-msg": "node ./verify-commit-msg.js"
+  }
+}
