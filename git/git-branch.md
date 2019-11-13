@@ -83,5 +83,5 @@
     将某个分支merge到当前分支
 
     ```
-      git merge [other-branch]
+      git merge [other-branch] 
     ```
