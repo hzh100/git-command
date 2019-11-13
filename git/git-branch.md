@@ -44,7 +44,25 @@
   or git push -u origin dev:origin/master
 
   or git push origin dev:origin/dev
-  
+
   or git push origin dev:origin/master
 
 ```
+
+### 删除分支
+
+  现在在 `dev` 分支 想删除 `dev` 
+
+  1.  先切换到别的分支: git checkout master
+
+  2. 删除本地分支： git branch -d dev
+
+  3. 如果删除不了可以强制删除，git branch -D dev
+
+  4. 有必要的情况下，删除远程分支：git push origin --delete dev
+
+  5. 在从公用的仓库fetch代码：git fetch origin dev:dev
+
+  6. 然后切换分支即可：git checkout dev
+
+  *注：上述操作是删除个人本地和个人远程分支，如果只删除个人本地，请忽略第4步
