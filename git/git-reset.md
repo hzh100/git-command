@@ -19,13 +19,10 @@
 ```
 
 
-或者更简单的做法(恢复上一个版本)是：
+回退到上一个版本是：
+
 ```
   git reset --hard HEAD~1 或 git reset --hard HEAD^
-
-  git add . 
-
-  git commit ‘roll-back’ 
 
   git push -f origin master
 ```
