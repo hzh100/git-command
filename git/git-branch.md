@@ -66,3 +66,22 @@
   6. 然后切换分支即可：git checkout dev
 
   *注：上述操作是删除个人本地和个人远程分支，如果只删除个人本地，请忽略第4步
+
+
+  ```
+    在删除分支的时候,我们会使用git branch --delete dev来执行.有时还会通过缩写git branch -d dev来代替,使用中我们发现还有git branch -D dev的写法,他们有什么区别呢?
+
+    -d 是--delete的缩写,在使用--delete删除分支时,该分支必须完全和它的上游分支merge完成(了解上游分支,可以点击查看链接),如果没有上游分支,必须要和HEAD完全merge
+    -D 是--delete --force的缩写,这样写可以在不检查merge状态的情况下删除分支
+
+    --force 简写-f,作用是将当前branch重置到初始点(startpoint),如果不使用--force的话,git分支无法修改一个已经存在的分支.
+  ```
+
+
+
+  ### 分支合并
+    将某个分支merge到当前分支
+
+    ```
+      git merge [other-branch]
+    ```
