@@ -18,7 +18,7 @@
 
 ### 安装 `yorkie` 或者 `husky` 注册 git hooks
 
-##### Example
+### Example
 *安装yorkie*`
 
   1. 在项目 ` .git/hooks `目录下：
