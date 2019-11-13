@@ -2,6 +2,12 @@
 
 > git 命令行 常用操作学习、记录
 
+verify git commit message 
+```
+  yarn install or npm install
+```
+
+
 ### Git是目前世界上最先进的分布式版本控制系统（没有之一）。[搭建Git服务器](https://bolerolily.github.io/2018/08/02/%E6%90%AD%E5%BB%BAGit%E6%9C%8D%E5%8A%A1%E5%99%A8/)
 
 
