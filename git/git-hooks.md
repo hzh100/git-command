@@ -19,7 +19,7 @@
 ### 安装 `yorkie` 或者 `husky` 注册 git hooks
 在项目 ` .git/hooks `目录下：
 
-```
+```js
   applypatch-msg            post-applypatch           post-rewrite              pre-auto-gc               pre-rebase                prepare-commit-msg.sample
   applypatch-msg.sample     post-checkout             post-update               pre-commit                pre-rebase.sample         push-to-checkout
   commit-msg                post-commit               post-update.sample        pre-commit.sample         pre-receive               sendemail-validate
@@ -30,7 +30,7 @@
 
 在 package.json 文件中配置git hooks:
 
-```
+```bash
   "gitHooks": {
     "pre-commit": "str=hello; echo $str, message --- pre-commit",
     "commit-msg": "node scripts/verify-commit-msg.js"
