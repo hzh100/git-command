@@ -17,23 +17,27 @@
 ---
 
 ### 安装 `yorkie` 或者 `husky` 注册 git hooks
-在项目 ` .git/hooks `目录下：
 
-```js
-  applypatch-msg            post-applypatch           post-rewrite              pre-auto-gc               pre-rebase                prepare-commit-msg.sample
-  applypatch-msg.sample     post-checkout             post-update               pre-commit                pre-rebase.sample         push-to-checkout
-  commit-msg                post-commit               post-update.sample        pre-commit.sample         pre-receive               sendemail-validate
-  commit-msg.sample         post-merge                pre-applypatch            pre-push                  pre-receive.sample        update
-  fsmonitor-watchman.sample post-receive              pre-applypatch.sample     pre-push.sample           prepare-commit-msg        update.sample
+##### Example
+*安装yorkie*`
 
-```
+  1. 在项目 ` .git/hooks `目录下：
 
-在 package.json 文件中配置git hooks:
+    ```js
+      applypatch-msg            post-applypatch           post-rewrite              pre-auto-gc               pre-rebase                prepare-commit-msg.sample
+      applypatch-msg.sample     post-checkout             post-update               pre-commit                pre-rebase.sample         push-to-checkout
+      commit-msg                post-commit               post-update.sample        pre-commit.sample         pre-receive               sendemail-validate
+      commit-msg.sample         post-merge                pre-applypatch            pre-push                  pre-receive.sample        update
+      fsmonitor-watchman.sample post-receive              pre-applypatch.sample     pre-push.sample           prepare-commit-msg        update.sample
 
-```bash
-  "gitHooks": {
-    "pre-commit": "str=hello; echo $str, message --- pre-commit",
-    "commit-msg": "node scripts/verify-commit-msg.js"
-  }
+    ```
 
-```
+  2. 在 package.json 文件中配置git hooks:
+
+    ```bash
+      "gitHooks": {
+        "pre-commit": "str=hello; echo $str, message --- pre-commit",
+        "commit-msg": "node scripts/verify-commit-msg.js"
+      }
+
+    ```
