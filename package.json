@@ -22,7 +22,7 @@
   "homepage": "https://github.com/hzh100/git-commend#readme",
   "gitHooks": {
     "pre-commit": "str=hello; echo $str, message --- pre-commit",
-    "commit-msg": "node ./verify-commit-msg.js"
+    "commit-msg": "node verify-commit-msg.js"
   },
   "devDependencies": {
     "chalk": "^3.0.0",
